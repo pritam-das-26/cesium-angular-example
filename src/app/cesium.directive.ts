@@ -1,5 +1,5 @@
 import { Directive, ElementRef, OnInit } from '@angular/core';
-import { Viewer } from 'cesium';
+import { Viewer,Cesium3DTileset } from 'cesium';
 
 @Directive({
   selector: '[appCesium]',
@@ -10,7 +10,9 @@ export class CesiumDirective implements OnInit {
   constructor(private el: ElementRef) {}
 
   ngOnInit(): void {
+    const tileseturl="..//adf/"
     const viewer = new Viewer(this.el.nativeElement);
+    console.log(Cesium3DTileset)
   }
 
 }

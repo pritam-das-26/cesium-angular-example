@@ -25,22 +25,22 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium/Workers",
+                "input": "node_modules/cesium/Build/CesiumUnminified/Workers",
                 "output": "/assets/cesium/Workers"
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium/ThirdParty",
+                "input": "node_modules/cesium/Build/CesiumUnminified/ThirdParty",
                 "output": "/assets/cesium/ThirdParty"
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium/Assets",
+                "input": "node_modules/cesium/Build/CesiumUnminified/Assets",
                 "output": "/assets/cesium/Assets"
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/cesium/Build/Cesium/Widgets",
+                "input": "node_modules/cesium/Build/CesiumCesiumUnminified/Widgets",
                 "output": "/assets/cesium/Widgets"
               }
             ],
@@ -153,5 +153,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
